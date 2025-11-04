@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+tensorflow>=2.10
+transformers
+torch
+matplotlib
+openpyxl
+python-dotenv
+tf-keras
+accelerate>=0.26.0
