@@ -14,18 +14,15 @@ build/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Models - Keep best checkpoints, ignore temporary files
+# Models - Ignore all trained model files
 models/*.h5
 models/*.pkl
 models/*.pt
 models/*.bin
 models/checkpoint/
-!models/tfidf_cnn_combined_best.h5
-!models/tfidf_vectorizer_combined.pkl
 
 # BERT checkpoints (large files, don't commit to git)
-models/bert_combined/model.safetensors
-models/bert_combined/*.bin
+models/bert_combined/
 
 # Data - Keep raw CSVs, ignore processed
 data/*_train.csv
