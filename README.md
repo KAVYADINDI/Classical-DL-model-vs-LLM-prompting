@@ -23,7 +23,6 @@ prj/
 │   └── label_mappings.pkl        # Sentiment label mappings
 │
 ├── preprocess/                    # Data preprocessing
-│   ├── 01_data_exploration.py    # EDA and statistics
 │   └── 02_data_preprocessing.py  # Text cleaning and splits
 │
 ├── models/                        # Model implementations
@@ -102,14 +101,15 @@ prj/
 
 ### Setup
 ```bash
-# Clone repository
-git clone <repository-url>
-cd prj
+# Clone the repository
+git clone https://github.com/KAVYADINDI/Classical-DL-model-vs-LLM-prompting.git
+cd Classical-DL-model-vs-LLM-prompting
 
 # Create virtual environment
 python -m venv venv
+# start/activate the environment
 venv\Scripts\activate  # Windows
-# source venv/bin/activate  # Linux/Mac
+source venv/bin/activate  # Linux/Mac
 
 # Install dependencies
 pip install -r requirements.txt
@@ -181,15 +181,8 @@ All comparison charts are generated in `evaluation/`:
 ```bibtex
 @misc{absa_dl_vs_llm_2025,
   title={Aspect-Based Sentiment Analysis: Deep Learning vs Open-Source LLMs},
-  author={Kalidindi, Kavya and Palamuri, Varsha and Kurapati, Balaji},
-  year={2025}
+  author={Kalidindi, Kavya},
+  year={2025},
+  url={https://github.com/KAVYADINDI/Classical-DL-model-vs-LLM-prompting}
 }
 ```
-
-## License
-This project is for academic purposes.
-
-## Acknowledgments
-- Hugging Face Transformers for BERT implementation
-- Ollama for local LLM inference
-- SemEval datasets for ABSA benchmarks
