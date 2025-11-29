@@ -5,16 +5,11 @@ This project compares classical deep learning models with open-source large lang
 
 **Key Finding**: LLM Few-Shot achieved **81% accuracy**, outperforming fine-tuned BERT (76.7%) with no training required.
 
-## Team Members
-- Kavya Kalidindi
-- Varsha Palamuri
-- Balaji Kurapati
-
 ## Project Objectives
-1. Compare Deep Learning (TF-IDF+CNN, BERT) vs LLM approaches
-2. Demonstrate LLM superiority through prompt engineering
-3. Evaluate accuracy, inference speed, and explainability
-4. Generate presentation-ready visualizations
+1. **Use NN/CNN models to solve the AI task**: Implement TF-IDF+CNN and fine-tuned BERT for aspect-based sentiment analysis
+2. **Use LLM-based AI tool to solve the same task via prompting**: Apply Phi 2.7B with Zero-Shot and Few-Shot prompting strategies
+3. **Compare both approaches**: Evaluate performance (accuracy, F1-score), cost (training time), and insights (explainability)
+4. **Draw conclusions**: Analyze strengths (LLM: no training, explainability; DL: faster inference) and limitations (LLM: slower inference; DL: requires training, less explainable)
 
 ## Project Structure
 ```
@@ -36,10 +31,7 @@ prj/
 │   ├── 02_bert_model.py          # Fine-tuned DistilBERT
 │   ├── 03_llm_zeroshot.py        # Zero-shot LLM (Phi 2.7B)
 │   ├── 04_llm_fewshot.py         # Few-shot LLM (Phi 2.7B)
-│   ├── utils.py                  # Evaluation utilities
-│   ├── bert_combined/            # Saved BERT checkpoint
-│   ├── tfidf_cnn_combined_best.h5   # Best CNN model
-│   └── tfidf_vectorizer_combined.pkl # TF-IDF vectorizer
+│   └── utils.py                  # Evaluation utilities
 │
 ├── evaluation/                    # Results and visualizations
 │   ├── comparison_accuracy.png   # Accuracy comparison chart
@@ -47,8 +39,11 @@ prj/
 │   ├── comparison_speed.png      # Inference time comparison
 │   ├── comparison_tradeoff.png   # Accuracy vs speed scatter
 │   ├── model_comparison_summary.csv  # Summary table
-│   ├── *_confusion_matrix.png    # Confusion matrices per model
-│   └── *_results.json            # Detailed results per model
+│   ├── bert_combined_confusion_matrix.png
+│   ├── llm_fewshot_combined_confusion_matrix.png
+│   ├── llm_zeroshot_combined_confusion_matrix.png
+│   ├── tfidf_cnn_combined_confusion_matrix.png
+│   └── tfidf_cnn_combined_training.png
 │
 ├── compare/                       # Cross-model comparison
 │   ├── metrics_logger.py         # Centralized CSV logging
