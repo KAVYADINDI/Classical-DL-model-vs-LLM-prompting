@@ -1,0 +1,5 @@
+Model,Accuracy,F1-Score,Precision,Recall,Inference Time,Training Time
+TF-IDF+CNN,53.45%,37.24%,28.57%,53.45%,1.40 ms,1.64 min
+BERT_Finetune,76.73%,75.63%,75.5%,76.73%,223.96 ms,110.32 min
+LLM_ZeroShot_Improved_phi_2.7b,74.0%,76.77%,81.68%,74.0%,15.53 s,0.00 s
+LLM_FewShot_phi_2.7b,81.0%,81.43%,81.99%,81.0%,22.50 s,0.00 s

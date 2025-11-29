@@ -1,0 +1,5 @@
+timestamp,model_name,data_type,accuracy,f1_score,precision_macro,recall_macro,tp,tn,fp,fn,training_time,inference_time_per_sample,notes
+11/28/2025 15:31,TF-IDF+CNN,combined,0.534526854,0.372387042,0.285718958,0.534526854,627,-546,546,546,98.45546913,0.001404378,"CNN filters: 128, Max features: 5000"
+11/28/2025 21:47,BERT_Finetune,combined,0.767263427,0.756269388,0.754985931,0.767263427,900,-273,273,273,6619.456779,0.223958126,"Model: distilbert-base-uncased, Epochs: 2"
+11/29/2025 11:30,LLM_ZeroShot_Improved_phi_2.7b,combined,0.74,0.7677,0.8168,0.74,74,-26,26,26,0,15.531308,Improved Zero-Shot prompt with explicit rules
+11/29/2025 11:23,LLM_FewShot_phi_2.7b,combined,0.81,0.814320652,0.819946524,0.81,81,-19,19,19,0,22.50382631,Few-Shot (5 examples) with phi:2.7b

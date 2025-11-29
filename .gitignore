@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Models - Keep best checkpoints, ignore temporary files
+models/*.h5
+models/*.pkl
+models/*.pt
+models/*.bin
+models/checkpoint/
+!models/tfidf_cnn_combined_best.h5
+!models/tfidf_vectorizer_combined.pkl
+
+# BERT checkpoints (large files, don't commit to git)
+models/bert_combined/model.safetensors
+models/bert_combined/*.bin
+
+# Data - Keep raw CSVs, ignore processed
+data/*_train.csv
+data/*_val.csv
+data/*_test.csv
+
+# Results - Keep summary, ignore detailed outputs
+evaluation/*_results.json
+evaluation/*_cache.json
+evaluation/*_samples.csv
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Git
+.git/
