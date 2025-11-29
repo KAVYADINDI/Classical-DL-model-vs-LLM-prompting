@@ -1,22 +1,22 @@
 # Aspect-Based Sentiment Analysis: Deep Learning vs Open-Source LLMs
 
-## 📋 Project Overview
+## Project Overview
 This project compares classical deep learning models with open-source large language models (LLMs) for aspect-based sentiment analysis (ABSA) on laptop and restaurant reviews. The goal is to demonstrate that properly prompted LLMs can outperform fine-tuned deep learning models with zero training time while providing explainable reasoning.
 
 **Key Finding**: LLM Few-Shot achieved **81% accuracy**, outperforming fine-tuned BERT (76.7%) with no training required.
 
-## 👥 Team Members
+## Team Members
 - Kavya Kalidindi
 - Varsha Palamuri
 - Balaji Kurapati
 
-## 🎯 Project Objectives
+## Project Objectives
 1. Compare Deep Learning (TF-IDF+CNN, BERT) vs LLM approaches
 2. Demonstrate LLM superiority through prompt engineering
 3. Evaluate accuracy, inference speed, and explainability
 4. Generate presentation-ready visualizations
 
-## 📁 Project Structure
+## Project Structure
 ```
 prj/
 ├── data/                          # Datasets
@@ -61,7 +61,7 @@ prj/
 └── README.md                      # This file
 ```
 
-## 🚀 Models Implemented
+## Models Implemented
 
 ### 1. **TF-IDF + CNN** (Baseline)
 - **Accuracy**: 53.5%
@@ -81,13 +81,13 @@ prj/
 - **Inference**: 15.5 s/sample
 - Prompt-engineered with 5 explicit rules
 
-### 4. **LLM Few-Shot** (Phi 2.7B via Ollama) ⭐ **BEST MODEL**
+### 4. **LLM Few-Shot** (Phi 2.7B via Ollama) - **BEST MODEL**
 - **Accuracy**: 81%
 - **Training**: 0 seconds
 - **Inference**: 22.5 s/sample
 - 8 detailed examples with reasoning analysis
 
-## 📊 Key Results
+## Key Results
 
 | Model | Accuracy | F1-Score | Training Time | Inference Time |
 |-------|----------|----------|---------------|----------------|
@@ -98,7 +98,7 @@ prj/
 
 **Conclusion**: LLM Few-Shot outperforms fine-tuned BERT by 4.3% with zero training time and explainable reasoning.
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 - Python 3.9+
@@ -124,7 +124,7 @@ pip install -r requirements.txt
 ollama pull phi:2.7b
 ```
 
-## 📖 Usage
+## Usage
 
 ### Complete Pipeline
 ```bash
@@ -149,7 +149,7 @@ python models/02_bert_model.py  # Loads from models/bert_combined/
 python models/01_tfidf_cnn.py   # Loads from models/tfidf_cnn_combined_best.h5
 ```
 
-## 📈 Visualizations
+## Visualizations
 All comparison charts are generated in `evaluation/`:
 - **Accuracy Comparison**: Bar chart of model performance
 - **Metrics Comparison**: F1, Precision, Recall for all models
@@ -157,7 +157,7 @@ All comparison charts are generated in `evaluation/`:
 - **Accuracy vs Speed**: Trade-off scatter plot
 - **Confusion Matrices**: Per-model classification analysis
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Dataset
 - **Total Samples**: 5,865 (2,280 laptop + 3,585 restaurant)
@@ -175,14 +175,14 @@ All comparison charts are generated in `evaluation/`:
 - True/False Positives/Negatives per model
 - Training time, Inference time per sample
 
-## 🎓 Key Learnings
+## Key Learnings
 1. **Prompt Engineering is Critical**: Improved Zero-Shot from 16% → 74% with better prompts
 2. **Few-Shot Examples Matter**: 8 detailed examples boosted accuracy to 81%
 3. **LLMs Provide Explainability**: Reasoning traces show decision logic
 4. **No Training Advantage**: LLMs skip 110-minute BERT training time
 5. **CPU-Friendly**: Phi 2.7B runs efficiently on CPU (15-23s per sample)
 
-## 📝 Citation
+## Citation
 ```bibtex
 @misc{absa_dl_vs_llm_2025,
   title={Aspect-Based Sentiment Analysis: Deep Learning vs Open-Source LLMs},
@@ -191,10 +191,10 @@ All comparison charts are generated in `evaluation/`:
 }
 ```
 
-## 📄 License
+## License
 This project is for academic purposes.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 - Hugging Face Transformers for BERT implementation
 - Ollama for local LLM inference
 - SemEval datasets for ABSA benchmarks

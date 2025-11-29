@@ -38,7 +38,7 @@ def plot_accuracy_comparison(df):
     
     plt.tight_layout()
     plt.savefig('evaluation/comparison_accuracy.png', dpi=300, bbox_inches='tight')
-    print("✓ Saved: evaluation/comparison_accuracy.png")
+    print("Saved: evaluation/comparison_accuracy.png")
     plt.close()
 
 def plot_f1_precision_recall(df):
@@ -74,7 +74,7 @@ def plot_f1_precision_recall(df):
     
     plt.tight_layout()
     plt.savefig('evaluation/comparison_metrics.png', dpi=300, bbox_inches='tight')
-    print("✓ Saved: evaluation/comparison_metrics.png")
+    print("Saved: evaluation/comparison_metrics.png")
     plt.close()
 
 def plot_inference_time(df):
@@ -101,7 +101,7 @@ def plot_inference_time(df):
     
     plt.tight_layout()
     plt.savefig('evaluation/comparison_speed.png', dpi=300, bbox_inches='tight')
-    print("✓ Saved: evaluation/comparison_speed.png")
+    print("Saved: evaluation/comparison_speed.png")
     plt.close()
 
 def plot_accuracy_vs_speed(df):
@@ -127,7 +127,7 @@ def plot_accuracy_vs_speed(df):
     
     plt.tight_layout()
     plt.savefig('evaluation/comparison_tradeoff.png', dpi=300, bbox_inches='tight')
-    print("✓ Saved: evaluation/comparison_tradeoff.png")
+    print("Saved: evaluation/comparison_tradeoff.png")
     plt.close()
 
 def create_summary_table(df):
@@ -155,7 +155,7 @@ def create_summary_table(df):
     
     # Save to CSV
     summary.to_csv('evaluation/model_comparison_summary.csv', index=False)
-    print("✓ Saved: evaluation/model_comparison_summary.csv")
+    print("Saved: evaluation/model_comparison_summary.csv")
     
     return summary
 
